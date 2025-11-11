@@ -38,6 +38,9 @@ app.get("/todo", (req, res) => {
     todo
   })
 })
+app.get("/",(req,res)=>{
+   res.status(200).json({message:"Welcome to Home Page"});
+});
 
 app.get("/todos", (req, res) => {
   const randomTodos = [];
